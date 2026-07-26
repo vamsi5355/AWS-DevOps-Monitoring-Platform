@@ -1,0 +1,28 @@
+{
+  "name": "devops-assignment",
+  "version": "1.0.0",
+  "description": "AWS DevOps Monitoring Platform with CI/CD, PM2, Nginx and GitHub Actions",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js",
+    "test": "echo \"No tests specified\""
+  },
+  "keywords": [
+    "aws",
+    "devops",
+    "monitoring",
+    "express",
+    "pm2",
+    "github-actions",
+    "nginx"
+  ],
+  "author": "Pavan Kumar Goli",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1",
+    "pm2": "^6.0.8",
+    "systeminformation": "^5.31.17"
+  }
+}

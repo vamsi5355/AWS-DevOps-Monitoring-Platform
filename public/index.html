@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>AWS DevOps Monitoring Platform</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <h1>🚀 AWS DevOps Monitoring Platform</h1>
+
+            <p class="subtitle">
+                Production Environment
+            </p>
+
+        </header>
+
+        <div class="dashboard-grid">
+
+            <!-- ========================= -->
+            <!-- SERVER INFORMATION -->
+            <!-- ========================= -->
+
+            <div class="card">
+
+                <h2>🖥 Server Information</h2>
+
+                <p><strong>Hostname:</strong>
+                    <span id="hostname">Loading...</span>
+                </p>
+
+                <p><strong>Platform:</strong>
+                    <span id="platform">Loading...</span>
+                </p>
+
+                <p><strong>Architecture:</strong>
+                    <span id="architecture">Loading...</span>
+                </p>
+
+                <p><strong>Node Version:</strong>
+                    <span id="nodeVersion">Loading...</span>
+                </p>
+
+                <p><strong>Uptime:</strong>
+                    <span id="uptime">Loading...</span>
+                </p>
+
+            </div>
+
+            <!-- ========================= -->
+            <!-- SYSTEM METRICS -->
+            <!-- ========================= -->
+
+            <div class="card">
+
+                <h2>📊 System Metrics</h2>
+
+                <p><strong>Memory Usage</strong></p>
+
+                <div class="progress">
+
+                    <div id="memoryBar"
+                        class="progress-fill"></div>
+
+                </div>
+
+                <p id="memoryPercent">0%</p>
+
+                <hr>
+
+                <p>
+
+                    <strong>Used Memory:</strong>
+
+                    <span id="usedMemory">
+                        Loading...
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <strong>Free Memory:</strong>
+
+                    <span id="freeMemory">
+                        Loading...
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <strong>CPU Usage:</strong>
+
+                    <span id="cpuLoad">
+                        Loading...
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <strong>Disk Usage:</strong>
+
+                    <span id="diskUsage">
+                        Loading...
+                    </span>
+
+                </p>
+
+            </div>
+
+            <!-- ========================= -->
+            <!-- DEPLOYMENT -->
+            <!-- ========================= -->
+
+            <div class="card">
+
+                <h2>🚀 Deployment</h2>
+
+                <p>
+
+                    <strong>Version:</strong>
+
+                    <span id="version">
+                        Loading...
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <strong>Build:</strong>
+
+                    <span id="build">
+                        Loading...
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <strong>Commit:</strong>
+
+                    <span id="commit">
+                        Loading...
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <strong>Last Deployment:</strong>
+
+                    <span id="lastDeployment">
+                        Loading...
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <strong>Pipeline:</strong>
+
+                    <span id="pipeline">
+                        Loading...
+                    </span>
+
+                </p>
+
+            </div>
+
+            <!-- ========================= -->
+            <!-- AWS SERVICES -->
+            <!-- ========================= -->
+
+            <div class="card">
+
+                <h2>☁ AWS Services</h2>
+
+                <p>🟢 EC2 Instance</p>
+
+                <p>🟢 GitHub Actions</p>
+
+                <p>🟢 Nginx Reverse Proxy</p>
+
+                <p>🟢 PM2 Process Manager</p>
+
+                <p>🟢 CloudWatch Monitoring</p>
+
+                <p>🟢 Amazon S3 Backup</p>
+
+            </div>
+
+            <!-- ========================= -->
+            <!-- PM2 -->
+            <!-- ========================= -->
+
+            <div class="card">
+
+                <h2>⚙️ PM2 Process Monitor</h2>
+
+                <p>
+
+                    <strong>Process:</strong>
+
+                    <span id="pm2Process">
+                        Loading...
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <strong>Status:</strong>
+
+                    <span id="pm2Status">
+                        Loading...
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <strong>PID:</strong>
+
+                    <span id="pm2Pid">
+                        Loading...
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <strong>CPU:</strong>
+
+                    <span id="pm2Cpu">
+                        Loading...
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <strong>Memory:</strong>
+
+                    <span id="pm2Memory">
+                        Loading...
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <strong>Restarts:</strong>
+
+                    <span id="pm2Restart">
+                        Loading...
+                    </span>
+
+                </p>
+
+            </div>
+
+            <!-- ========================= -->
+            <!-- HEALTH -->
+            <!-- ========================= -->
+
+            <div class="card">
+
+                <h2>❤️ Application Health</h2>
+
+                <p>
+
+                    <strong>Status:</strong>
+
+                    <span id="healthStatus">
+
+                        Checking...
+
+                    </span>
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- QUICK LINKS -->
+        <!-- ========================= -->
+
+        <div class="card">
+
+            <h2>🔗 Quick Links And Access</h2>
+
+            <div class="links">
+
+                <a href="https://github.com/23A91A0565/AWS-DevOps-Monitoring-Platform"
+                    target="_blank">
+
+                    💻 Source Code
+
+                </a>
+
+                <a href="/health"
+                    target="_blank">
+
+                    ❤️ Health API
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+body{
+    margin:0;
+    padding:0;
+    background:#111827;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:40px auto;
+}
+
+h1{
+
+    text-align:center;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#9CA3AF;
+
+}
+
+.status-card{
+
+    background:#1F2937;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    margin-top:30px;
+
+    text-align:center;
+
+    box-shadow:0 0 10px rgba(0,0,0,.4);
+
+}
+
+#status{
+
+    color:#22C55E;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+.progress{
+
+    width:100%;
+
+    background:#374151;
+
+    height:24px;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    margin-top:10px;
+
+}
+
+.progress-fill{
+
+    width:0%;
+
+    height:100%;
+
+    background:#22C55E;
+
+    transition:width .5s;
+
+}
+
+.dashboard-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    margin-top:30px;
+}
+
+.card{
+    background:#1F2937;
+    border-radius:12px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.35);
+}
+
+.card h2{
+    margin-top:0;
+    color:#60A5FA;
+    font-size:24px;
+}
+
+.card p{
+    margin:14px 0;
+    font-size:17px;
+}
