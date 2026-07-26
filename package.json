@@ -17,7 +17,7 @@
     "github-actions",
     "nginx"
   ],
-  "author": "Pavan Kumar Goli",
+  "author": "Madhu Vamsi Anupoju",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
